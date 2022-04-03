@@ -16,8 +16,8 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php')) {
  * Router Setup
  * --------------------------------------------------------------------
  */
-$routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('Home');
+// $routes->setDefaultNamespace('App\Controllers');
+// $routes->setDefaultController('Home');
 // $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
@@ -37,15 +37,14 @@ $routes->setAutoRoute(true);
 // $routes->get('/api', 'home::index');
 $routes->group("api", ["namespace" => "App\Controllers\Api"] , function($routes){
 
-    $routes->group("employee", function($routes){
+        $routes->group("employee", function($routes){
 
-       $routes->get("list", "EmployeeController::index");
-    //    $routes->post("employee", "EmployeeController::addEmployee");
-    //    $routes->get("single/(:num)", "EmployeeController::singleEmployee/$1");
-    //    $routes->put("update/(:num)", "EmployeeController::updateEmployee/$1");
-    //    $routes->delete("delete/(:num)", "EmployeeController::deleteEmployee/$1");
-    });
-     
+        $routes->get("list", "EmployeeController::index");
+        //    $routes->post("employee", "EmployeeController::addEmployee");
+        //    $routes->get("single/(:num)", "EmployeeController::singleEmployee/$1");
+        //    $routes->put("update/(:num)", "EmployeeController::updateEmployee/$1");
+        //    $routes->delete("delete/(:num)", "EmployeeController::deleteEmployee/$1");
+        });
 });
 /*
  * --------------------------------------------------------------------
