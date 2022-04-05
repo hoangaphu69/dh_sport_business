@@ -31,11 +31,11 @@ class Database extends Config
      * @var array
      */
     public $default = [
-        'DSN'      => '',
-        'hostname' => 'localhost',
-        'username' => 'root',
-        'password' => 'root',
-        'database' => 'dh_sport_business',
+        'DSN'      => 'mysql://mrvc6n9us46iepwd:p3h5utlhu05typ4k@wb39lt71kvkgdmw0.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/etedrk2sw2pn8zt6',
+        'hostname' => 'wb39lt71kvkgdmw0.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+        'username' => 'mrvc6n9us46iepwd',
+        'password' => 'p3h5utlhu05typ4k',
+        'database' => 'etedrk2sw2pn8zt6',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
